@@ -6,11 +6,11 @@ require 'parsenip/version'
 Gem::Specification.new do |spec|
   spec.name          = "parsenip"
   spec.version       = Parsenip::VERSION
-  spec.authors       = ["bpgabrielli"]
+  spec.authors       = ["Bruno Gabrielli"]
   spec.email         = ["bpgabrielli@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Grab the good stuff from recipe pages}
+  spec.description   = %q{Takes a recipe URL and returns a hash of neatly nested components, or just the parts you ask for.}
+  spec.homepage      = "https://github.com/bpgabrielli/parsenip"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -20,4 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency 'rspec'
+
+  spec.add_dependency "nokogiri"
 end
